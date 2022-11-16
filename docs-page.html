@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>EAXEE USER DOCUMENTATION</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Bootstrap 4 Template For Software Startups">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="eaxee-favicon.png">
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+	<link id="theme-style" rel="stylesheet" href="assets/css/thematics.css">
+
+</head>
+
+<body class="docs-page">
+	<header class="header fixed-top">
+		<div class="branding docs-branding">
+			<div class="container-fluid position-relative py-2">
+				<div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+						type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2"
+								src="assets/images/eaxee-logo.png" alt="logo"></a></div>
+				</div>
+				<!--//docs-logo-wrapper-->
+
+			</div>
+			<!--//container-->
+		</div>
+		<!--//branding-->
+	</header>
+	<!--//header-->
+
+
+	<div class="docs-wrapper">
+		<div id="docs-sidebar" class="docs-sidebar">
+
+			<nav id="docs-nav" class="docs-nav navbar">
+				<ul class="section-items list-unstyled nav flex-column pb-3">
+					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span
+								class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Administration</a>
+					</li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">User Management</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">License management</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Repository Management</a></li>
+
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span
+								class="theme-icon-holder me-2"><i class="fas fa-retweet"></i></span>ImpEx</a></li>
+
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span
+								class="theme-icon-holder me-2"><i class="fas fa-sitemap"></i></span>Enterprise
+							Architecture</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Object Tree and Filter </a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Object Management</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Model Management</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-4">File Management</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-5">Switching Among The Objects /
+							Models</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-6">Diagram Management</a></li>
+
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span
+								class="theme-icon-holder me-2"><i class="fas fa-server"></i></span>Organization
+							Portal</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Chart Management</a></li>
+
+
+					<!-- <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
+								class="theme-icon-holder me-2"><i class="fas fa-tools"></i></span>Meta Modeler</a></li> -->
+
+
+				</ul>
+
+			</nav>
+			<!--//docs-nav-->
+		</div>
+		<!--//docs-sidebar-->
+		<div class="docs-content">
+			<div class="container">
+				<article class="docs-article" id="section-1">
+					<header class="docs-header">
+						<h1 class="docs-heading">Administration <span class="docs-time">Last updated: 2022-10-27</span>
+						</h1>
+						<section class="docs-intro">
+							<p>The EA Administration module exists as the control module for the Eaxee that allows you
+								to manage all the user, license and repository opertions. Once you have selected Eaxee
+								Administration module you now have three options available:</p>
+
+						</section>
+						<!--//docs-intro-->
+
+
+					</header>
+					<section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">User Management</h2>
+						<p>The User management module involves defining and managing users within a single panel by
+							creating a new user, removing a user, activating or deactivating a user and allowing the
+							user to update password.</p>
+						<p>User management has two available modules user registration and password management. </p>
+						<br>
+						<!-- <h4 class="sub-main-head">User Registration:</h4> -->
+						<h5><i>Creating A User</i></h5>
+						<ul>
+							<li>Go to user management. </li>
+							<li>Go to user registration. </li>
+							<li>Enter full name.</li>
+							<li>Enter User ID (username; through which you can login). The entered username must be
+								unique and must contain minimum 5 characters.</li>
+							<li>Enter email with correct format i.e. abc@gmail.com and click on Add button.</li>
+						</ul>
+						<p>Success message of User Added will be displayed and user will be added in <strong>Registered Users</strong> table. The registered user can now be allocated a license and can be added to pool. </p>
+						<br>
+						<div class="col-12 col-md-4 mb-3">
+							<iframe class="shadow rounded " frameborder="0" height="340" allow="autoplay"
+								src="https://www.youtube.com/embed/mmNMC2b1iWk" width="540"></iframe>
+						</div>
+
+						<h5><i>Removing A User</i></h5>
+						<ul>
+							<li>Go to user management. </li>
+							<li>Go to user registration. </li>
+							<li>Go to Registered users table.</li>
+							<li>Select any user by clicking on it.</li>
+							<li>Click on Remove button. </li>
+						</ul>
+						<p>Removing a user will delete the user permenantly.</p>
+						<br>
+						<div class="col-12 col-md-4 mb-3">
+							<iframe class="shadow rounded " frameborder="0" height="340" allow="autoplay"
+								src="https://www.youtube.com/embed/i2FALIoOYXM" width="540"></iframe>
+						</div>
+
+						<h5><i>Activating / Deactivating A User</i></h5>
+						<ul>
+							<li>Go to user management. </li>
+							<li>Go to user registration. </li>
+							<li>Go to Registered users table.</li>
+							<li>Select any user by clicking on it.</li>
+							<li>Click on Activate / Deactivate button. </li>
+						</ul>
+						<p>Once Deactivate button is pressed it changes to Activate button and the deactivated user will
+							not be able to login.</p>
+						<br>
+						<div class="col-12 col-md-4 mb-3">
+							<iframe class="shadow rounded " frameborder="0" height="340" allow="autoplay"
+								src="https://www.youtube.com/embed/5Evz3umFRhg" width="540"></iframe>
+						</div>
+
+						<h5><i>Changing / Updating A Password</i></h5>
+
+						<p></p>
+						<ul>
+							<li>Go to user management.</li>
+							<li>Go to password management.</li>
+							<li>Go to Registered users table.</li>
+							<li>Select any user by clicking on it.</li>
+							<li>Click on change button.</li>
+							<li>Enter password and confirm password. Password must be of minimum 8 characters.</li>
+							<li>Click on update.</li>
+
+						</ul>
+						<p>Success message of <strong>Password Successfully Updated</strong> is displayed.</p>
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p>Password fields are initially disabled. Clicking on the Change button will make
+									Password and confirm password fields active.</p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+						<br>
+						<div class="col-12 col-md-4 mb-3">
+							<iframe class="shadow rounded " frameborder="0" height="340" allow="autoplay"
+								src="https://www.youtube.com/embed/c3hb6Mi6ur8" width="540"></iframe>
+						</div>
+
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">License Management</h2>
+						<p>The license management module is an asset management that allows the named and concurrent
+							users to manage their licenses and pool quickly and effectively.</p>
+						<p>License management has two available modules named and concurrent user</p>
+						<br>
+
+						<h5><i>Allocating A License To Named User</i></h5>
+						<ul>
+							<li>Go to license management.</li>
+							<li>Go to Named user.</li>
+							<li>Go to available license table.</li>
+							<li>Select available license from Available Licenses table.</li>
+							<li>Select user from Activated Users table.</li>
+							<li>Click on Allocate.</li>
+						</ul>
+						<p>User is successfully allocated a license for throughout the session (i.e. even if the user
+							logouts the license remain allocated to that user). User is displayed in <strong>Allocated
+								Licenses</strong> table.</p>
+						<br>
+						<div class="col-12 col-md-4 mb-3">
+							<iframe class="shadow rounded " frameborder="0" height="340" allow="autoplay"
+								src="https://www.youtube.com/embed/ELRywMWDkv0" width="540"></iframe>
+						</div>
+
+						<h5><i>Deallocating A License From Named User</i></h5>
+						<ul>
+							<li>Go to license management.</li>
+							<li>Go to Named user.</li>
+							<li>Select user from Allocated Licenses table.</li>
+							<li>Click on Deallocate.</li>
+						</ul>
+						<p>Success message is displayed of Deallocated. License is released and is now displayed in
+							<strong>Available Licenses</strong> table.
+						</p>
+						<br>
+						<div class="col-12 col-md-4 mb-3">
+							<iframe class="shadow rounded " frameborder="0" height="340" allow="autoplay"
+								src="https://www.youtube.com/embed/UAbSoRVG-aw" width="540"></iframe>
+						</div>
+
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p>Concurrent user licenses are those which are released only when the user session ends
+									(i.e. once the user logouts) or any other pool module is selected to be shown.</p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+						<br>
+
+						<h5><i>Creating / Adding A New Pool</i></h5>
+						<ul>
+							<li>Go to license management.</li>
+							<li>Go to concurrent user.</li>
+							<li>Enter pool name (must be unique).</li>
+							<li>Select pool role from available roles that are of architect, repository admin and
+								organizational portal.</li>
+							<li>Click on Add pool.</li>
+
+						</ul>
+						<p>New user is successfully added in the table and all the licenses available of the role are
+							displayed and activated users are displayed.</p>
+						<br>
+						<div class="col-12 col-md-4 mb-3">
+							<iframe class="shadow rounded " frameborder="0" height="340" allow="autoplay"
+								src="https://www.youtube.com/embed/-LE__2Ttgmo" width="540"></iframe>
+						</div>
+
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p> Architect Role has 3 licenses. Repository Admin has 1 license.
+									Organizational Portal has 10 licenses. </p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+						<br>
+
+						<h5><i>Removing A License Pool</i></h5>
+						<ul>
+							<li>Go to license management.</li>
+							<li>Go to concurrent user.</li>
+							<li>Select a pool from a table.</li>
+							<li>Click on Remove pool.</li>
+						</ul>
+						<br>
+						
+
+						<h5><i>Adding License To A Pool</i></h5>
+						<ul>
+							<li>Go to license management.</li>
+							<li>Go to concurrent user.</li>
+							<li>Select a user from a table.</li>
+							<li>Click on Show pool.</li>
+							<li>Go to available licenses table.</li>
+							<li>Select license.</li>
+							<li>Click on Add license.</li>
+						</ul>
+						<br>
+						<div class="col-12 col-md-4 mb-3">
+							<iframe class="shadow rounded " frameborder="0" height="340" allow="autoplay"
+								src="https://www.youtube.com/embed/Ocoqk3ABtRE" width="540"></iframe>
+						</div>
+
+
+						<h5><i>Removing License From A Pool</i></h5>
+						<ul>
+							<li>Go to license management.</li>
+							<li>Go to concurrent user.</li>
+							<li>Select a user from a table.</li>
+							<li>Click on Show pool.</li>
+							<li>Go to available licenses table.</li>
+							<li>Select license.</li>
+							<li>Click on Remove license.</li>
+						</ul>
+						<br>
+
+						<h5><i>Adding User To A Pool</i></h5>
+						<ul>
+							<li>Go to license management.</li>
+							<li>Go to concurrent user.</li>
+							<li>Go to activated users table.</li>
+							<li>Select user.</li>
+							<li>Click on add user.</li>
+							<li>Click on save button.</li>
+						</ul>
+						<br>
+						<div class="col-12 col-md-4 mb-3">
+							<iframe class="shadow rounded " frameborder="0" height="340" allow="autoplay"
+								src="https://www.youtube.com/embed/1KEiaP89Gbw" width="540"></iframe>
+						</div>
+
+						<h5><i>Removing User From A Pool</i></h5>
+						<ul>
+							<li>Go to license management.</li>
+							<li>Go to concurrent user.</li>
+							<li>Go to activated users table.</li>
+							<li>Select user.</li>
+							<li>Click on add user.</li>
+							<li>Click on save button.</li>
+						</ul>
+
+
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-1-3">
+						<h2 class="section-heading">Repository Management</h2>
+						<p>The Repository Management module is a collection of object, model, attachment and dashboard
+							that has been created to track and save all the changes that are made to them. It basically
+							provides the accessibility of all objects, models, attachments dashboard at a single
+							location to be cleared out at once. The steps for clearing out are as follows:</p>
+						<br>
+
+						<h5><i>Clearing All Objects </i></h5>
+						<ul>
+							<li>Go to repository management.</li>
+							<li>Click on object button.</li>
+						</ul>
+						<br>
+						<div class="col-12 col-md-4 mb-3">
+							<iframe class="shadow rounded " frameborder="0" height="340" allow="autoplay"
+								src="https://www.youtube.com/embed/yoJpTEktPDY" width="540"></iframe>
+						</div>
+
+
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p> The steps for clearing is same for model, attachments and dashboard. </p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+						
+
+					</section>
+					<!--//section-->
+
+				</article>
+
+				<article class="docs-article" id="section-2">
+					<header class="docs-header">
+						<h1 class="docs-heading">ImpEx</h1>
+						<section class="docs-intro">
+							<p>
+								Eaxee ImpEx comprises of three distinctive options: Export template option that
+								downloads an empty excel file constituting all the objects. Export data option that
+								downloads the bulk data of the website onto the local machine of the user in the form of
+								excel file. Import data option lets the user add-on bulk data from their local machine
+								to the website with fease. ImpEx easily synchronizes the data with the available
+								meta-objects on the website.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<br>
+					<h5><i>Export Template </i></h5>
+					<p>Selecting this option will automatically download an empty excel file of all the objects onto
+						your local machine. </p>
+					<ul>
+						<li>Click on the Export template. </li>
+					</ul>
+					<p>Message of the empty template file being prepared is displayed on the side panel. An empty
+						template file automatically downloads onto your local machine.</p>
+
+					<br>
+					<h5><i>Export Data </i></h5>
+					<p>Selecting this option will automatically download the bulk object record of the website onto your
+						local machine. </p>
+					<ul>
+						<li>Click on the Export data. </li>
+					</ul>
+					<p>Messages of records being fetched are displayed on the side panel. Excel file automatically
+						downloads onto your local machine.</p>
+
+
+					<br>
+					<h5><i>Import Data </i></h5>
+					<p>Selecting this option will automatically upload the bulk object record from your local machine
+						onto the website. </p>
+					<ul>
+						<li>Click on Choose file. </li>
+						<li>Select the file from the directory.</li>
+						<li>Click on import.</li>
+					</ul>
+					<p>Success message of all data uploaded is displayed and the object records will be added in the
+						enterprise architecture module. </p>
+
+				</article>
+				<!--//docs-article-->
+
+
+				<article class="docs-article" id="section-3">
+					<header class="docs-header">
+						<h1 class="docs-heading">Enterprise Architecture </h1>
+						<section class="docs-intro">
+							<p> Enterprise Architecture provides a blueprint for the users to design and manage the
+								structure and operation of organizations. </p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-3-1">
+						<h2 class="section-heading">Object Tree and Filter</h2>
+						<p>Filter allow the users to refine the results of their queries and display the refined
+							results. You can search for available object, model, atatchment, navigation, roadmap or
+							diagram and the object tree directory will open correspondingly.Enter a search term into the
+							filter box. Search results will appear automatically under the tree.</p>
+						<br>
+						<h5><i>Filtering Data To View </i></h5>
+
+						<ul>
+							<li>Click on Filter field. </li>
+							<li>Type any named data you want to search.</li>
+						</ul>
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-3-2">
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p> Enterprise tab has three available options objects, models and attachments. </p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+						<br>
+
+						<h2 class="section-heading">Object Management</h2>
+						<p>The Object Management Module exists as the control module for the object creation, editing of
+							a object or deleting it.</p>
+						<br>
+						<h5><i>Creating An Object From Tree</i></h5>
+						<ul>
+							<li>Click on Enterprise tab.</li>
+							<li>Click on Objects tab.</li>
+							<li>Click on repository folder.</li>
+							<li>Click on Elements folder.</li>
+							<li>Click on any given element layer.</li>
+							<li>Click on Element.</li>
+							<li>Right click on any element type.</li>
+							<li>Click on new object.</li>
+						</ul>
+						<br>
+
+						<h5><i>Creating An Object From Quick Access</i></h5>
+						<ul>
+							<li>Click on Quick Access tab.</li>
+							<li>Click on object from left panel.</li>
+							<li>Type in details of the object.</li>
+							<li>Click on save.</li>
+						</ul>
+						<br>
+
+						<h5><i>Creating An Object In A Diagram</i></h5>
+						<p>Object can be easily created by diagram through drag and drop from the model's tab.</p>
+						<ul>
+							<li>Click on Models Tab.</li>
+							<li>Right click on any folder in which you want to create Diagram.</li>
+							<li>Click on New Diagram.</li>
+							<li>Enter Diagram name.</li>
+							<li>Click on Create.</li>
+							<li>Drag and drop the object selected from the panel.</li>
+							<li>Click on save.</li>
+						</ul>
+						<br>
+
+						<h5><i>Editing an object From Tree</i></h5>
+						<ul>
+							<li>Click on Objects tab.</li>
+							<li>Click on repository folder.</li>
+							<li>Click on Elements folder.</li>
+							<li>Click on any given element layer.</li>
+							<li>Click on Element.</li>
+							<li>Click on any element type.</li>
+							<li>Select an object an edit as per your preference.</li>
+							<li>Click on save button.</li>
+
+						</ul>
+						<br>
+
+						<h5><i>Editing an object From Quick Access</i></h5>
+						<ul>
+							<li>Click on Quick Access tab.</li>
+							<li>Select an object from the table an edit as per your preference.</li>
+							<li>Click on save button.</li>
+						</ul>
+						<br>
+
+						<h5><i>Editing An Object In A Diagram</i></h5>
+						<ul>
+							<li>Click on Models Tab.</li>
+							<li>Right click on any folder in which you want to edit Diagram.</li>
+							<li>Click on Diagram and edit the details as per your preference.</li>
+							<li>Click on save button.</li>
+						</ul>
+						<br>
+
+						<h5><i>Removing / Deleting An Object From Tree</i></h5>
+
+						<ul>
+							<li>Click on Objects tab.</li>
+							<li>Click on repository folder.</li>
+							<li>Click on Elements folder.</li>
+							<li>Click on any given element layer.</li>
+							<li>Click on Element.</li>
+							<li>Right click on any element type.</li>
+							<li>Click on remove.</li>
+						</ul>
+
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p> The steps for removing / deleting an object is same from tree, quick access and from
+									the diagram. </p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+						<br>
+
+						<h5><i>Restoring An Object From Recycle bin</i></h5>
+						<ul>
+							<li>Click on Objects tab.</li>
+							<li>Click on recycle bin.</li>
+							<li>Click on Elements folder.</li>
+							<li>Right click on object you want to restore.</li>
+							<li>Click on restore.</li>
+						</ul>
+
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p> The steps for restoring an object is same from tree, quick access and from the
+									diagram. </p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+						<br>
+
+						<h5><i>Permenantly Deleting An Object From Recycle bin</i></h5>
+						<ul>
+							<li>Click on Objects tab.</li>
+							<li>Click on recycle bin.</li>
+							<li>Click on Elements folder.</li>
+							<li>Right click on object you want to restore.</li>
+							<li>Click on delete.</li>
+							<li>Click on confirm to permenantly delete the object.</li>
+						</ul>
+
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p> The steps for deleting an object is same from tree, quick access and from the
+									diagram. </p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-3-3">
+						<h2 class="section-heading">Model Management</h2>
+						<p>The model management aims at supporting meta-data operations to be performed at folder,
+							diagram, catalogue, matrix, navigation and roadmap. </p>
+						<br>
+
+						<h5><i>Creating A Subfolder</i></h5>
+						<ul>
+							<li>Click on Models Tab.</li>
+							<li>Right click on repository folder.</li>
+							<li>Click on new folder.</li>
+							<li>Enter folder name.</li>
+							<li>Click on create folder.</li>
+						</ul>
+						<br>
+
+						<h5><i>Creating A Diagram</i></h5>
+						<ul>
+							<li>Click on Models Tab.</li>
+							<li>Right click on repository folder.</li>
+							<li>Click on new diagram.</li>
+							<li>Enter Diagram name.</li>
+							<li>Click on create diagram.</li>
+						</ul>
+						<br>
+
+						<h5><i>Creating A Catalogue</i></h5>
+						<ul>
+							<li>Click on Models Tab.</li>
+							<li>Right click on repository folder.</li>
+							<li>Click on new catalogue.</li>
+							<li>Enter Catalogue name.</li>
+							<li>Select element and click on create.</li>
+						</ul>
+						<br>
+
+						<h5><i>Creating A Matrix</i></h5>
+						<ul>
+							<li>Click on Models Tab.</li>
+							<li>Right click on repository folder.</li>
+							<li>Click on new matrix.</li>
+							<li>Enter matrix name.</li>
+							<li>Select element and click on create.</li>
+						</ul>
+						<br>
+
+
+
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-3-4">
+						<h2 class="section-heading">File Management</h2>
+						<p>File management module works by moving all your documents into the digital space. Existing
+							computer files are easily integrated into the website and objects can be easily change as
+							per perference.</p>
+
+						<br>
+
+						<h5><i>Uploading A File</i></h5>
+						<ul>
+							<li>Click on Attachments tab.</li>
+							<li>Right click to create a new folder.</li>
+							<li>Right click on the folder that is created and click on new attachment.</li>
+							<li>Click on choose file and select the file from the directory.</li>
+							<li>Click on upload</li>
+						</ul>
+						<br>
+
+						<h5><i>Attaching A File To An Object</i></h5>
+						<ul>
+							<li>Click on Objects tab.</li>
+							<li>Click on repository folder.</li>
+							<li>Click on Elements folder.</li>
+							<li>Click on any given element layer.</li>
+							<li>Click on Element.</li>
+							<li>Click on any element type.</li>
+							<li>Select an object and select attachmnets from the left panel.</li>
+							<li>Select the attachment and click on save changes.</li>
+						</ul>
+
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p> The attachments can also be linked to the object from the Quick Access by selecting
+									the object and selecting the file from the attachments tab. </p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+
+					</section>
+					<!--//section-->
+
+					<section class="docs-section" id="item-3-5">
+						<h2 class="section-heading">Switching Among The Objects / Models</h2>
+						<p>The browsing history provides the list of all visited objects / models. It lets you switch
+							among the object and models and provides you with the brief of all visited objects /
+							modules.</p>
+
+						<br>
+
+						<h5><i>Closing A Window From History Tab</i></h5>
+						<ul>
+							<li>Click on History tab.</li>
+							<li>Click on cross sign to close selected window.</li>
+						</ul>
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p> The history tab also lets you close all the objects / models windows at once by
+									clicking on <strong>Close All</strong> . </p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+						<br>
+
+						<h5><i>Switching Windows From History Tab</i></h5>
+						<ul>
+							<li>Click on History tab.</li>
+							<li>Click on window where you want to search.</li>
+						</ul>
+
+					</section>
+					<!--//section-->
+
+
+
+					<section class="docs-section" id="item-3-6">
+						<h2 class="section-heading">Diagram Management</h2>
+						<p>Enterprise Architecture Diagrams depicts information about concept that together create an
+							architecture or are part of architecture. </p>
+
+						<br>
+
+						<h5><i>Editing A Diagram</i></h5>
+						<ul>
+							<li>Click on Models Tab.</li>
+							<li>Right click on any folder in which you want to edit Diagram.</li>
+							<li>Click on Diagram and edit the details as per your preference.</li>
+							<li>Click on save button.</li>
+						</ul>
+
+						<h5><i>Renaming A Diagram</i></h5>
+						<ul>
+							<li>Click on Models Tab.</li>
+							<li>Right click on any folder in which you want to rename a Diagram.</li>
+							<li>Right Click on Diagram and edit the name as per your preference.</li>
+							<li>Click on save button.</li>
+						</ul>
+
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p> The diagram can be easily exported / downloaded as png and svg formats. </p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+					</section>
+					<!--//section-->
+
+				</article>
+				<!--//docs-article-->
+
+
+				<article class="docs-article" id="section-4">
+					<header class="docs-header">
+						<h1 class="docs-heading">Organization Portal</h1>
+						<section class="docs-intro">
+							<p>An organizational portal serves as the entrance gate for organizational users and one of
+								its main objectives is to manage the corporate knowledge; it enables us to link
+								information, knowledge and data via incorporated charts.</p>
+						</section>
+						<!--//docs-intro-->
+					</header>
+					<section class="docs-section" id="item-4-1">
+						<h2 class="section-heading">Chart Management</h2>
+						<p>Organization chart management provide gateways to organization data, information, and
+							knowledge in the form of charts.</p>
+
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p> Organization portal provides three chart types i.e., column chart, clustered column
+									chart and piechart. The tab and chart names are editable. </p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+
+						<br>
+
+						<h5><i>Creating A Tab</i></h5>
+						<ul>
+							<li>Go to organization portal.</li>
+							<li>Click on Add button.</li>
+							<li>Enter the tab title and click on add button.</li>
+						</ul>
+						Tab with 6 empty charts will be created.
+
+
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p> The current version limits the creation of 9 tabs. </p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+						<br>
+
+						<h5><i>Text View</i></h5>
+						Text view provides the information of all the application component and their corresponding
+						attribute / criticality in tabular form.
+						<ul>
+							<li>Click on text view button.</li>
+							<li>Select an element and its attribute.</li>
+							<li>Click on generate button.</li>
+						</ul>
+
+						<br>
+
+						<h5><i>Chart View</i></h5>
+						Chart view provides the information of all the application component and their corresponding
+						attribute / criticality in chart form.
+						<ul>
+							<li>Click on chart view button.</li>
+							<li>Select an element.</li>
+							<li>Select attribute of the corresponding element and click on add.</li>
+							<li>Select an operation and where the operation is to be applied either on attribute or on
+								element.</li>
+							<li>Select chart type.</li>
+							<li>Click on generate chart.</li>
+						</ul>
+
+						<br>
+
+						<h5><i>Creating A Column Chart</i></h5>
+						<ul>
+							<li>Click on chart view button.</li>
+							<li>Select <strong> Application Interface</strong> from element.</li>
+							<li>Select <strong>Short Name</strong> from attribute and click on add.</li>
+							<li>Select <strong>Count</strong> from operation.</li>
+							<li>Select <strong>Element</strong> from the operation applied on.</li>
+							<li>Select <strong>Column</strong> from chart type.</li>
+							<li>Click on generate chart.</li>
+						</ul>
+
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p> The steps shown above are for Application Interface element. For all other elements
+									the steps are same for column chart creation. Two or more elements can aso be
+									plotted on a single chart. </p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+						<br>
+
+						<h5><i>Creating A Clustered Column Chart</i></h5>
+						<ul>
+							<li>Click on chart view button.</li>
+							<li>Select <strong> Business Application</strong> from element.</li>
+							<li>Select <strong>Functional Adequacy</strong> from attribute and click on add.</li>
+							<li>Select <strong>Average</strong> from operation.</li>
+							<li>Select <strong>Element</strong> from the operation applied on.</li>
+							<li>Select <strong>Clustered Column</strong> from chart type.</li>
+							<li>Click on generate chart.</li>
+						</ul>
+
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p> The steps shown above are for Business Application element. For all other elements
+									the steps are same for clustered column chart creation. Two or more elements can aso
+									be plotted on a single chart. </p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+
+						<br>
+
+						<h5><i>Creating A Pie Chart</i></h5>
+						<ul>
+							<li>Click on chart view button.</li>
+							<li>Select <strong>Business Application</strong> from element.</li>
+							<li>Select <strong>Functional Adequacy</strong> from attribute and click on add.</li>
+							<li>Select <strong>Distribution</strong> from operation.</li>
+							<li>Select <strong>Element</strong> from the operation applied on.</li>
+							<li>Select <strong>Pie</strong> from chart type.</li>
+							<li>Click on generate chart.</li>
+						</ul>
+
+						<div class="callout-block callout-block-info">
+
+							<div class="content">
+								<h4 class="callout-title">
+									<span class="callout-icon-holder me-1">
+										<i class="fas fa-info-circle"></i>
+									</span>
+									<!--//icon-holder-->
+									Note
+								</h4>
+								<p> The steps shown above are for Business Application element. For all other elements
+									the steps are same for pie chart creation. </p>
+							</div>
+							<!--//content-->
+						</div>
+						<!--//callout-block-->
+					</section>
+					<!--//section-->
+
+				</article>
+				<!--//docs-article-->
+
+				<!-- 
+				<article class="docs-article" id="section-5">
+					<header class="docs-header">
+						<h1 class="docs-heading">Meta Modeler</h1>
+						<section class="docs-intro">
+							<p>COMING SOON!</p>
+						</section>
+						
+					</header>
+
+				</article> -->
+			
+
+			</div>
+		</div>
+	</div>
+	<!--//docs-wrapper-->
+
+
+	<!-- Javascript -->
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+	<!-- Page Specific JS -->
+	<script src="assets/plugins/smoothscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="assets/js/highlight-custom.js"></script>
+	<script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+	<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+	<script src="assets/js/docs.js"></script>
+
+</body>
+
+</html>
